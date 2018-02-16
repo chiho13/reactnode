@@ -20,7 +20,7 @@ passport.use(
     {
       clientID: keys.googleClientID,
       clientSecret: keys.googleClientSecret,
-      callbackURL: "/auth/google/callback",
+      callbackURL: '/auth/google/callback',
       proxy: true
     },
     async (accessToken, refreshToken, profile, done) => {
@@ -32,7 +32,6 @@ passport.use(
 
       const user = await new User({ googleId: profile.id }).save();
       done(null, user);
-
     }
   )
 );
