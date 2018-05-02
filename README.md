@@ -1,1 +1,2 @@
 # reactnode
+> npm run dev
