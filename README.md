@@ -1,2 +1,3 @@
 # reactnode
-> npm run dev
+ >  npm i && cd client && npm i
+ > npm run dev
